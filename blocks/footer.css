@@ -14,6 +14,16 @@
   width: 100%;
 }
 
+.footer__about-the-team {
+  margin: 0;
+  padding: 50px 0 0 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 1.2;
+}
+
 .footer__copyright {
   display: grid;
   grid-template-columns: repeat(2, auto);
