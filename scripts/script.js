@@ -3,7 +3,10 @@ google.charts.load("current", {
   mapsApiKey: "AIzaSyA8lHLmVMXQVVYiRuK6B8IVSzoHnJL-jg4",
 });
 google.charts.setOnLoadCallback(() => {
-  fetch("/JSON/data.JSON")
+  // fetch("/JSON/data.JSON")
+  fetch(
+    "https://raw.githubusercontent.com/TimothyHorth/code_bridge_2022/main/JSON/data.json"
+  )
     .then((res) => {
       return res.json();
     })
