@@ -18,78 +18,142 @@
     <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/png" />
     <title>Solar Farms Around the World</title>
   </head>
-  <body>
-    <div class="page">
-      <header class="header">
+  <body class="page">
+    <header class="header">
+      <div class="header__image-container"></div>
         <h1 class="header__title">Solar Power, Brightening Up Your World</h1>
-      </header>
-      <section class="data">
-        <h2 class="data__title">TITLE</h2>
-        <img class="data__graph-img" src="" alt="">
-        <p class="data__writeup">WRITEUP</p>
-      </section>
-      <section class="data">
-        <h2 class="data__title">TITLE</h2>
-        <img class="data__graph-img" src="" alt="">
-        <p class="data__writeup">WRITEUP</p>
-      </section>
-      <section class="data">
-        <h2 class="data__title">TITLE</h2>
-        <img class="data__graph-img" src="" alt="">
-        <p class="data__writeup">WRITEUP</p>
-      </section>
-      <section class="data data_type_interactive">
-        <h2 class="data__title">Interactive Map</h2>
-        <h2 class="data__sub-title">How does eah country stack up?</h2>
-        <div class="data__graph-img data__graph-img_type_interactive" id="regions_div" style="width: 1280px; height: 800px"></div>
-        <p class="data__writeup">WRITEUP</p>
-      </section>
-      <footer class="footer">
-        <img
-          class="footer__transition-image"
-          src="./images/footer_background.png"
-          alt="green energy city"
-        />
-        <div class="contact__social-block">
-          <ul class="contact__icons-list">
-            <li class="contact__icons-item">
-              <a class="contact__link" href="#">
-                <img
-                  src="./images/facebook_white.svg"
-                  class="contact__icon"
-                  alt="Facebook"
-                />
-              </a>
-            </li>
-            <li class="contact__icons-item">
-              <a class="contact__link" href="#">
-                <img
-                  src="./images/instagram_white.svg"
-                  class="contact__icon"
-                  alt="instagram"
-                />
-              </a>
-            </li>
-            <li class="contact__icons-item">
-              <a class="contact__link" href="#">
-                <img
-                  src="./images/email_white.svg"
-                  class="contact__icon"
-                  alt="LinkedIn"
-                />
-              </a>
-            </li>
-        </div>
-        <div class="footer__copyright">
-          <p class="footer__copyright-symbol-and-year">&copy; 2022</p>
-          <p class="footer__copyright-text">
-            Javier Moreno Flores - Timothy Horth
-          </p>
-        </div>
-      </footer>
-    </div>
+      </div>
+      <h2 class="header__prompt">How does solar power change based on location?</h2>
+      <p class="header__overview">Intro to the webpage and what the goal of the data below is for. Description description 
+        description description description description description description description description description description 
+        description description description description description description description description description description
+         description description description description description description description description description description 
+         description description description description description description description description description description 
+         description description description description description description description description description description 
+         description description description description description description description description description description 
+         description description description description description description description description.</p>
+    </header>
+    <section class="nav">
+      <div class="nav__container">
+        <ul class="nav__bar">
+          <li class="nav__button-container">
+            <a class="nav__button-link" href="#data analysis">
+              <div class="nav__button">
+                <p class="nav__button-text">Data Analysis</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav__button-container">
+            <a class="nav__button-link" href="#capacity vs latitude">
+              <div class="nav__button">
+                <p class="nav__button-text">Capacity vs. Latitude</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav__button-container">
+            <a class="nav__button-link" href="#capacity vs longitude">
+              <div class="nav__button">
+                <p class="nav__button-text">Capacity vs. Longitude</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav__button-container">
+            <a class="nav__button-link" href="#capacity by region">
+              <div class="nav__button">
+                <p class="nav__button-text">Capacity by Region</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav__button-container">
+            <a class="nav__button-link" href="#interactive map">
+              <div class="nav__button">
+                <p class="nav__button-text">Interactive Map</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="data">
+      <h2 class="data__title" id="data analysis">Data Analysis</h2>
+      <h3 class="data__subheader">Raw Data - Excel Workbook</h3>
+    <iframe width="1000" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=7CBA3B309B11419B%21153&authkey=%21ABysc7TJeCb3S6E&em=2&wdAllowInteractivity=False&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=false"></iframe>
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+      <p class="data__writeup">WRITEUP</p>
+      <h3 class="data__subheader">Data Preprocessing - Jupyter Notebook</h3>
+      <iframe src="http://localhost:8888/notebooks/code_bridge_2022/code_b.ipynb" width="100%" height="100%"></iframe>
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+  </section>
+    <section class="data">
+      <h2 class="data__title" id="capacity vs latitude">Capacity vs. Latitude</h2>
+      <img class="data__graph-img data_graph-img_type_latitude" src="./images/example_boxplots.png" alt="boxplot">
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+      <p class="data__writeup">WRITEUP</p>
+    </section>
+    <section class="data">
+      <h2 class="data__title" id="capacity vs longitude">Capacity vs. Longitude</h2>
+      <img class="data__graph-img" src="./images/example_boxplots.png" alt="boxplot">
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+      <p class="data__writeup">WRITEUP</p>
+    </section>
+    <section class="data">
+      <h2 class="data__title" id="capacity by region">Capacity by Region</h2>
+      <img class="data__graph-img" src="./images/example_boxplots.png" alt="boxplot">
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+      <p class="data__writeup">WRITEUP</p>
+    </section>
+    <section class="data data_type_interactive">
+      <h2 class="data__title" id="interactive map">Interactive Map</h2>
+      <h2 class="data__sub-title">How does eah country stack up?</h2>
+      <div class="data__graph-img data__graph-img_type_interactive" id="regions_div" style="width: 1280px; height: 800px"></div>
+      <h4 class="data__subtitle">[subtitle for data]</h4>
+      <p class="data__writeup">WRITEUP</p>
+    </section>
+    <footer class="footer">
+      <img
+        class="footer__transition-image"
+        src="./images/footer_background.png"
+        alt="green energy city"
+      />
+      <div class="contact__social-block">
+        <ul class="contact__icons-list">
+          <li class="contact__icons-item">
+            <a class="contact__link" href="#">
+              <img
+                src="./images/facebook_white.svg"
+                class="contact__icon"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li class="contact__icons-item">
+            <a class="contact__link" href="#">
+              <img
+                src="./images/instagram_white.svg"
+                class="contact__icon"
+                alt="instagram"
+              />
+            </a>
+          </li>
+          <li class="contact__icons-item">
+            <a class="contact__link" href="#">
+              <img
+                src="./images/email_white.svg"
+                class="contact__icon"
+                alt="LinkedIn"
+              />
+            </a>
+          </li>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-symbol-and-year">&copy; 2022</p>
+        <p class="footer__copyright-text">
+          Javier Moreno Flores - Timothy Horth
+        </p>
+      </div>
+    </footer>
   </body>
-  <!-- <script type="text/javascript" src="data.json"></script> -->
+  <script type="text/javascript" src="data.json"></script>
   <script
     type="text/javascript"
     src="https://www.gstatic.com/charts/loader.js"
