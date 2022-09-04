@@ -26,7 +26,6 @@ google.charts.setOnLoadCallback(() => {
     });
 
   function drawRegionsMap(arr) {
-    console.log(arr);
     var data = google.visualization.arrayToDataTable(arr);
 
     var options = {
