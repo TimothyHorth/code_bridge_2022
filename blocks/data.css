@@ -52,6 +52,10 @@
   min-height: 400px;
 }
 
+.data__iframe-container:last-of-type {
+  padding-top: 48px;
+}
+
 .data__iframe-excel {
   margin: 0;
   padding: 0;
@@ -69,25 +73,29 @@
 }
 
 .data__graph-img_type_latitude {
-  width: 1120px;
-  height: 900px;
+  width: 82%;
+  /* height: 900px; */
 }
 
-/* .data__graph-img_type_interactive {
-  width: 1120px;
-  width: 100%;
-  min-height: 200px;
-  height: 800px;
-  height: 100%;
-} */
+.data__graph-img_type_longitude {
+  width: 82%;
+}
+
+.data__graph-img_type_region {
+  width: 82%;
+}
+
+.data__graph-img_type_interactive {
+  padding-top: 50px;
+}
 
 .data__subtitle {
   margin: 0;
-  padding: 20px 0 30px;
+  padding: 20px 150px 30px;
   color: black;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 1.2;
 }
 
