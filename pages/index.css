@@ -2,13 +2,6 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 
-/* import swiper.js css styles*/
-/* @import url("../vendor/swiper.css"); */
-
-/*import rellax.js css styles*/
-/* @import url("../vendor/rellax.css"); */
-/* import css styles for each blocks */
-
 @import url("../blocks/page.css");
 @import url("../blocks/header.css");
 @import url("../blocks/nav.css");
@@ -16,15 +9,6 @@
 @import url("../blocks/contact.css");
 @import url("../blocks/footer.css");
 @import url("../blocks/team.css");
-/* @import url("../blocks/nav.css");
-@import url("../blocks/button.css");
-@import url("../blocks/portfolio.css");
-@import url("../blocks/testimonials.css");
-@import url("../blocks/about.css");
-@import url("../blocks/contact.css");
-@import url("../blocks/form.css");
-@import url("../blocks/footer.css"); */
-*/
 
 /*adding smooth scrolling to entire page*/
 html {
