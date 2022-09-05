@@ -3,7 +3,6 @@ google.charts.load("current", {
   mapsApiKey: "AIzaSyA8lHLmVMXQVVYiRuK6B8IVSzoHnJL-jg4",
 });
 google.charts.setOnLoadCallback(() => {
-  // fetch("/JSON/data.JSON")
   fetch(
     "https://raw.githubusercontent.com/TimothyHorth/code_bridge_2022/main/JSON/data.json"
   )
@@ -19,24 +18,26 @@ google.charts.setOnLoadCallback(() => {
       return arr;
     })
     .then((arr) => {
-      drawRegionsMap(arr);
+      const data = google.visualization.arrayToDataTable(arr);
+      var chart = new google.visualization.GeoChart(
+        document.getElementById("regions_div")
+      );
+
+      drawRegionsMap(data, chart);
+      window.addEventListener("resize", () => {
+        drawRegionsMap(data, chart);
+      });
     })
-    .catch(() => {
-      console.log("did not work");
+    .catch((err) => {
+      console.log(err);
     });
 
-  function drawRegionsMap(arr) {
-    var data = google.visualization.arrayToDataTable(arr);
-
+  function drawRegionsMap(data, chart) {
     var options = {
       colorAxis: { colors: ["#F2FBEB", "#8cc962"] },
       backgroundColor: "#FFFFFF",
       datalessRegionColor: "#FFFFFF",
     };
-
-    var chart = new google.visualization.GeoChart(
-      document.getElementById("regions_div")
-    );
 
     chart.draw(data, options);
   }

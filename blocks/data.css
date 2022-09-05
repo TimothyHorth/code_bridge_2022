@@ -53,11 +53,13 @@
   height: 900px;
 }
 
-.data__graph-img_type_interactive {
-  max-width: 1120px;
+/* .data__graph-img_type_interactive {
+  width: 1120px;
   width: 100%;
+  min-height: 200px;
   height: 800px;
-}
+  height: 100%;
+} */
 
 .data__subtitle {
   margin: 0;
