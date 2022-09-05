@@ -11,7 +11,7 @@
 .data::after {
   content: "";
   flex-grow: 1;
-  padding: 0px 615px 0;
+  padding: 0px 602px 0;
   border-bottom: 1px solid #8cc962;
   opacity: 0.7;
 }
@@ -119,9 +119,13 @@
   .data::after {
     content: "";
     flex-grow: 1;
-    padding: 1px 48vw 1px;
+    padding: 1px 47vw 1px;
     border-bottom: 1px solid #8cc962;
     opacity: 0.7;
+  }
+
+  .data__subtitle {
+    padding: 20px 11.7vw 30px;
   }
 }
 
