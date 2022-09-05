@@ -57,6 +57,11 @@
   padding: 0;
 }
 
+.data__iframe-jupyter {
+  margin: 0;
+  padding: 0;
+}
+
 .data__graph-img {
   margin: 0;
   padding: 0;
