@@ -103,6 +103,10 @@
   line-height: 1.2;
 }
 
+.data__subtitle_type_jupyter {
+  padding: 20px 150px 50px;
+}
+
 .data__writeup {
   margin: 0;
   padding: 0 0 50px 0;
@@ -126,6 +130,10 @@
 
   .data__subtitle {
     padding: 20px 11.7vw 30px;
+  }
+
+  .data__subtitle_type_jupyter {
+    padding: 20px 11.7vw 50px;
   }
 }
 
