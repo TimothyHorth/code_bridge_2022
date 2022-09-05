@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 880px) {
+  .footer__about-the-team {
+    font-size: 42px;
+  }
   /*.footer__icons {
       display: grid;
       grid-template-columns: repeat(3, auto);
@@ -70,5 +73,12 @@
 @media screen and (max-width: 500px) {
   .footer__copyright {
     font-size: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__about-the-team {
+    font-size: 22px;
   }
 }

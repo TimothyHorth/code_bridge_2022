@@ -5,20 +5,51 @@
   background-color: transparent;
   z-index: 1;
   height: 100px;
-  padding-top: 120px;
-  padding-bottom: 70px;
+  padding: 120px 0 70px;
+  width: 640px;
 }
 
-.contact__icons {
+/* .contact__icons {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 35px 40px;
   padding: 0;
+} */
+
+.contact__icons-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0 15vh; */
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  /* max-width: 600px;
+  width: 100%; */
+}
+
+.contact__icons-item {
+  margin: 0;
+  padding: 0;
+  /* height: 100px; */
+  width: 100px;
+  height: 100px;
+}
+
+.contact__link {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact__icon {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -26,63 +57,51 @@
   opacity: 0.85;
 }
 
-.contact__icons-list {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 0 195px;
-  padding: 0 0 56px;
-  list-style: none;
-  margin: 0;
-}
-
-.contact__icons-item {
-  margin: 0;
-  padding: 0;
-  height: 100px;
-}
-
-.contact__link {
-  margin: 0;
-  padding: 0;
-  height: 100px;
-}
-
-@media screen and (max-width: 1127px) {
-  .contact__title {
-    text-align: center;
-  }
-
-  .contact__container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact__image-container {
-    position: relative;
-    width: 300px;
-  }
-
-  .contact__form-image {
-    width: 300px;
-    position: relative;
-    z-index: 2;
-    bottom: 0;
-  }
-
+@media screen and (max-width: 1280px) {
   .contact__social-block {
-    height: 289px;
-    bottom: 85px;
-    position: absolute;
-    top: 216px;
-    max-width: 300px;
-    width: 100%;
+    width: 50%;
   }
+}
 
-  .contact__social-block-text {
-    padding-top: 69px;
+@media screen and (max-width: 880px) {
+  .contact__social-block {
+    height: 75px;
+    padding: 0 0 50px 0;
   }
+  .contact__icons-item {
+    width: 75px;
+    height: 75px;
+  }
+}
 
-  .contact__icons {
-    padding-bottom: 30px;
+@media screen and (max-width: 720px) {
+  .contact__social-block {
+    height: 62px;
+    padding: 0 0 45px 0;
+  }
+  .contact__icons-item {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact__social-block {
+    height: 50px;
+  }
+  .contact__icons-item {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact__social-block {
+    height: 35px;
+    padding: 0 0 50px;
+  }
+  .contact__icons-item {
+    width: 35px;
+    height: 35px;
   }
 }
