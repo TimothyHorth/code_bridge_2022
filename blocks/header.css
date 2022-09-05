@@ -51,9 +51,11 @@
 
 .header__overview {
   margin: 0;
-  padding: 0 0 10px 27px;
+  padding: 0 30px;
   color: black;
   text-align: left;
+  font-size: 20px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 1280px) {
@@ -62,6 +64,16 @@
     font-size: 5.6vw;
     max-width: 465px;
     width: 37vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__prompt {
+    font-size: 48px;
+  }
+
+  .header__overview {
+    font-size: 16px;
   }
 }
 
