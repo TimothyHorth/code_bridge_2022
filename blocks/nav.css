@@ -7,13 +7,21 @@
   box-sizing: border-box;
 }
 
-/* .nav::after {
+.nav::before {
   content: "";
   flex-grow: 1;
   padding: 40px 655px 0;
   border-bottom: 1px solid #8cc962;
   opacity: 0.7;
-} */
+}
+
+.nav::after {
+  content: "";
+  flex-grow: 1;
+  padding: 0 655px 0;
+  border-bottom: 1px solid #8cc962;
+  opacity: 0.7;
+}
 
 .nav__container {
   margin: 0;
@@ -26,7 +34,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  padding: 25px 0 0 0;
+  padding: 50px 0 0 0;
   list-style: none;
   gap: 34px 54px;
 }
