@@ -11,7 +11,7 @@ google.charts.setOnLoadCallback(() => {
     })
     .then((output) => {
       const data = JSON.parse(output);
-      let arr = [["Country", "Total Capacity [MW]", "Number of Farms"]];
+      let arr = [["Country", "Total Capacity [MW]", "Number of Projects"]];
       Object.keys(data.country).forEach((key) => {
         arr.push([key, data.capacity_mw[key], data.number_of_farms[key]]);
       });

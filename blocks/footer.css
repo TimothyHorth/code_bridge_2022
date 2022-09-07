@@ -53,11 +53,6 @@
   .footer__about-the-team {
     font-size: 42px;
   }
-  /*.footer__icons {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      gap: 35px 0;
-    }*/
 
   .footer__copyright {
     grid-template-columns: repeat(1, auto);

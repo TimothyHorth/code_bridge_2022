@@ -19,6 +19,7 @@
   content: "";
   flex-grow: 1;
   padding: 0 615px 0;
+  margin-bottom: 25px;
   border-bottom: 1px solid #8cc962;
   opacity: 0.7;
 }
@@ -105,9 +106,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .nav::before {
+    content: "";
+    flex-grow: 1;
+    padding: 40px 24vw 0;
+    border-bottom: 1px solid #8cc962;
+    opacity: 0.7;
+  }
+
   .nav__bar {
     gap: 10px 10px;
-    padding: 30px 0;
+    padding: 40px 0;
   }
 
   .nav__button-link {
