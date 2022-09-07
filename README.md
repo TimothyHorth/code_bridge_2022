@@ -21,7 +21,10 @@ The webpage was made to be responsive/adaptive using CSS flexbox. Additionally, 
 - Positioning and relative units
 - Property transitions
 - Media queries
+- Asynchronous programming (utilizing JSON file)
 - Google Charts, GeoChart, visualization
+- Jupyter Notebook (Python)
+- Python's matplotlib library
 
 **Project**
 
